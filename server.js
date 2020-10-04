@@ -10,7 +10,7 @@ class DataBase {
     constructor() {
 
         }
-        // Method to return raw/ string from db.json
+        // Method to return data string from db.json
     rawData() {
         return fs.readFileSync(dbPath);
     }
@@ -25,13 +25,13 @@ class DataBase {
      * */
 
     nextID() {
-        let jData = this.jsonData().sort((a, b) => { a.id - b.id });
+        let newData = this.jsonData().sort((a, b) => { a.id - b.id });
         let availableId = 1;
-        for (let avId = 0; avId < jData.length; avId++) {
-            if (parseInt(jData[avId].id) === avId + 1) {
+        for (let avId = 0; avId < newData.length; avId++) {
+            if (parseInt(newData[avId].id) === avId + 1) {
                 availableId++;
             }
-            if (parseInt(jData[avId].id) !== avId) {
+            if (parseInt(newData[avId].id) !== avId) {
                 break;
             }
         }
