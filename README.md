@@ -10,4 +10,4 @@ To install the necessary dependencies, run the following command: <code>npm inst
 The app is deployed on the following heroku server: [Take the Note](https://take-the-note.herokuapp.com/)
 
 ## Demo
-![demo](/assets/demo.gif)
+![demo](public/assets/demo.gif)
