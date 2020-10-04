@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Constants to hold the db pathe
+// Constants to hold the db path
 const dbDir = path.join(__dirname, 'db');
 const dbPath = path.join(dbDir, "db.json");
 
